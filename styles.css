@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+@font-face {
+    font-family: isfont;
+    src: url(NBInternationalProBoo.woff2);
+}
+@font-face {
+    font-family: myfont;
+    src: url(hindifont.TTF);
+}
+
+
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+ #page1{
+    height: 100vh;
+    width: 100%;
+    background-color: #dadada;
+    position: relative;
+}
+#cursor{
+    height: 5.8vw;
+    width: 5.8vw;
+    background-color: #dadada;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 15%;
+    transform: translate(-50%,-50%);
+
+}
+#cursor h5{
+    font-size: 1.3vw;
+    font-weight: 500;
+}
+#page1 video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+#page1-content{
+    height: 100%;
+    width: 100%;
+    /*background-color: black;*/
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+    color: #fff;
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.35vw 3vw;
+    width: 100%; 
+    /*background-color: red;*/
+}
+nav h3{
+    font-size: 1.6vw;
+    font-weight: 100;
+    color: #dadada;
+    font-family: myfont;
+}
+nav h4{
+    font-size: 1.5vw;
+    font-weight: 100;
+    color: #dadada;
+    font-family: myfont;
+
+}
+#rightnav{
+    display: flex;
+    justify-content: space-around;
+}
+#rightnav h4{
+    padding-right: 45px;
+}
+
+#page2{
+    height: 100vh;
+    width: 100%;
+    /*background-color: beige;*/
+    position: relative;
+    padding: 5vw 2.8vw;
+    background-color: #fee9cd;
+}
+#mainhead{
+    color: #dadada;
+    display: flex;
+    justify-content: center;
+    font-weight: 100;
+    font-size: 9vw;
+    z-index: 11;
+    padding-bottom: 25px;
+}
+#mainhead2{
+    color: #dadada;
+    display: flex;
+    justify-content: center;
+    font-size: 8.5vw;
+    font-weight: 100;
+    padding-bottom: 132px;
+    z-index: 11;
+   
+}
+ h6{
+    font-family: myfont;
+}
+
+
+
+#page2-top{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-bottom: 1.2vw;
+    margin-bottom: 1vw;
+    border-bottom: 1px solid #00000092;
+}
+#page2-top h3{
+    font-size: 1.7vw;
+    font-weight: 500;
+    width: 26%;
+    font-family: isfont;
+}
+#page2-top h4{
+    font-size: 1.7vw;
+    font-weight: 500;
+    font-family: isfont;
+}
+.elem{
+    overflow: hidden;
+}
+.elem h1{
+    font-size: 2.8vw;
+    font-weight: 500;
+    font-family: isfont;
+}
+#page3{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 3vw;
+    background-color: #fee9cd;
+}
+#page3-top{
+    
+    text-align: center;
+}
+#page3-top h2{
+    margin-bottom: 1vw;
+    font-size: 4.2vw;
+    
+    font-family: isfont;
+}
+#page3-elements{
+    height: 75vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 8vw;
+    
+
+
+}
+#page3-elements .box{
+    height: 100%;
+    width: 32.5%;
+    
+}
+#page3-elements .box video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+#page3-elements .box img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all ease 0.8s;
+}
+#page3-elements .box:hover img{
+    opacity: 0;
+}
